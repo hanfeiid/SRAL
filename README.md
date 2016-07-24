@@ -1,5 +1,7 @@
 # rssw16
-Experiment for Life-Long Place Recognition by Shared Representative Appearance Learning
+Experiment for Life-Long Place Recognition by Shared Representative Appearance Learning using Nordland Dataset, see
+
+https://inside.mines.edu/~fhan/publication/pdf/rssw16_sral.pdf
 
 If you use our method and/or codes, please cite our paper in RSS16 Workshop
 ```
