@@ -39,10 +39,10 @@ W = zeros(size(X,1),size(Y,2)); % weight matrix W
 
 ITER = 50;                  % maximum iteration
 J = zeros(ITER, 1);         % Objective value in Algorithm 1
-Icolor = ones(dColor,1);    % color feature modality dimension
-Igist = ones(dGist,1);      % gist feature modality dimension
-Ihog = ones(dHog,1);        % hog feature modality dimension
-Ilbp = ones(dLbp,1);        % lbp feature modality dimension
+Icolor = ones(dColor,1);    % color feature modality
+Igist = ones(dGist,1);      % gist feature modality
+Ihog = ones(dHog,1);        % hog feature modality
+Ilbp = ones(dLbp,1);        % lbp feature modality
 
 %% realization of Algorithm 1: iterations to obtain optimal W
 for iteration = 1 : ITER    
