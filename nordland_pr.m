@@ -85,7 +85,7 @@ for iter_idx = 1 : ITER
             + norm(W(dColor+dGist+dHog+1:dColor+dGist+dHog+dLbp,:),'fro') + 4 * eps;
     obj_21 = sum(sqrt(sum(W.*W,2)+eps));
     obj(iter_idx) = 0.5 * norm(X'*W-Y,'fro')^2 + lambda_G * obj_G + lambda_21 * obj_21;
-    display(sprintf('iteration %d: objective value = %d\n',iter_idx, obj(iter_idx)));
+    display(sprintf('iteration %d: objective value = %f',iter_idx, obj(iter_idx)));
     
     % end condition
     if (iter_idx > 1 && abs(obj(iter_idx) - obj(iter_idx-1)) <= 0.0001)
