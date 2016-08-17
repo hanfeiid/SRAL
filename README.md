@@ -3,6 +3,9 @@ Experiment for Life-Long Place Recognition by Shared Representative Appearance L
 
 https://inside.mines.edu/~fhan/publication/pdf/rssw16_sral.pdf
 
+Due to file size limitations of github, we put our .mat files used in the code at
+https://inside.mines.edu/~fhan/publication/code/data/sral/features_mat.zip
+
 If you use our method and/or codes, please cite our paper in RSS16 Workshop
 ```
 @INPROCEEDINGS{han2016life, 
