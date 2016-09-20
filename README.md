@@ -1,5 +1,5 @@
-# rssw16
-Experiment for Life-Long Place Recognition by Shared Representative Appearance Learning using Nordland Dataset, see
+# SRAL
+Experiment for life-long place recognition by Shared Representative Appearance Learning (SRAL) using Nordland Dataset, see
 
 https://inside.mines.edu/~fhan/publication/pdf/rssw16_sral.pdf
 
