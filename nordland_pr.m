@@ -1,4 +1,4 @@
-% File:     norway_pr.m
+% File:     nordland_pr.m
 % Author:   Fei Han
 % Email:    fhan@mines.edu
 % Date:     05/07/2016
@@ -84,7 +84,7 @@ for iter_idx = 1 : ITER
 end
 
 % output
-save('norway_W.mat', 'W');                  % W matrix
+save('nordland_W.mat', 'W');                  % W matrix
 display([norm(W(1:dColor,:),'fro'); ...     % display weight for each feature
  norm(W(dColor+1:dColor+dGist,:),'fro'); ...
  norm(W(dColor+dGist+1:dColor+dGist+dHog,:),'fro'); ...
