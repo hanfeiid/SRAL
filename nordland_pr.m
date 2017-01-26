@@ -4,22 +4,12 @@
 % Date:     05/07/2016
 % For:      Experiment using Nordland dataset for RSS16 Workshop paper
 %           https://inside.mines.edu/~fhan/publication/pdf/rss16_roms.pdf
-%
-% Result:
-% =======
-%           weight                  Features
-%           ------------------------------------
-%           0.051076164857597       color feature
-%           0.000000041039229       GIST feature
-%           0.463833312590418       HOG feature     * Most representive feature
-%           0.014029922297713       LBP feature
 
 clear all;
 close all;
 clc;
 
-%% load feature vectors for each modality
-% We use data of four seasons. Each season includes 1000 frames of images.
+%% load features
 % Each image is represented by four different feature modalities.
 load colorfeature.mat;
 load GISTfeature.mat;
@@ -28,7 +18,7 @@ load LBPfeature.mat;
 
 %% initialization
 
-% X matrix in Algorithm 1, \in R^{d*4000}
+% X matrix in Algorithm 1
 X = [I1color I2color I3color I4color;
      I1gist  I2gist  I3gist  I4gist;
      I1hog   I2hog   I3hog   I4hog;
@@ -42,14 +32,14 @@ dLbp = size(I1lbp, 1);
 
 [d, n] = size(X);
 
-% Y matrix in Algorithm 1, \in R^{4000*4}
+% Y matrix in Algorithm 1
 class = eye(4);    % 4 classes: spring, summer, autumn, winter
 Y = [repmat(class(1,:),n/4,1);
     repmat(class(2,:),n/4,1);
     repmat(class(3,:),n/4,1);
     repmat(class(4,:),n/4,1)];
 
-lambda_M = 0.1;                 % lambda for l-G1 norm 
+lambda_M = 0.1;                 % lambda for l-M norm 
 lambda_21 = 0.1;                % lambda for l-2,1 norm
 W = zeros(size(X,1),size(Y,2)); % weight matrix W
 
