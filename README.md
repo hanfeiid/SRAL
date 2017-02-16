@@ -1,19 +1,21 @@
 # SRAL
-Experiment for life-long place recognition by Shared Representative Appearance Learning (SRAL) using Nordland Dataset, see
+Experiment for the paper "SRAL: Shared Representative Appearance Learning for Long-Term Visual Place Recognition" using Nordland Dataset, see
 
-https://inside.mines.edu/~fhan/publication/pdf/rssw16_sral.pdf
+http://ieeexplore.ieee.org/document/7839213/
 
 Due to file size limitations of github, we put our .mat files used in the code at
 https://inside.mines.edu/~fhan/publication/code/data/sral/features_mat.zip
 
-If you use our method and/or codes, please cite our paper in RSS16 Workshop
+If you use our method and/or codes, please cite our paper
 ```
-@INPROCEEDINGS{han2016life, 
+@article{han2017sral, 
     AUTHOR    = {Fei Han AND Xue Yang AND Yiming Deng AND Mark Rentschler AND Dejun Yang AND Hao Zhang}, 
-    TITLE     = {Life-Long Place Recognition by Shared Representative Appearance Learning}, 
-    BOOKTITLE = {Workshop on Robotics: Science and Systems}, 
-    YEAR      = {2016}, 
-    ADDRESS   = {AnnArbor, Michigan}, 
-    MONTH     = {June}
+    TITLE     = {{SRAL}: Shared Representative Appearance Learning for Long-Term Visual Place Recognition}, 
+    JOURNAL   = {IEEE Robotics and Automation Letters}, 
+    YEAR      = {2017, to appear}
 } 
 ```
+
+_Remark: This paper was also preseneted at the workshop of Robotics: Science and Systems (RSS) in 2016, see_
+
+https://roboticvision.atlassian.net/wiki/pages/viewpage.action?pageId=41320632
