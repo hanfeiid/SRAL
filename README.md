@@ -12,7 +12,9 @@ If you use our method and/or codes, please cite our paper
     AUTHOR    = {Fei Han AND Xue Yang AND Yiming Deng AND Mark Rentschler AND Dejun Yang AND Hao Zhang}, 
     TITLE     = {{SRAL}: Shared Representative Appearance Learning for Long-Term Visual Place Recognition}, 
     JOURNAL   = {IEEE Robotics and Automation Letters}, 
-    YEAR      = {2017, to appear}
+    VOLUME    = {2},
+    NUMBER    = {2},
+    YEAR      = {2017}
 } 
 ```
 
